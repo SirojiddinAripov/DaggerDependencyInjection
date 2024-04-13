@@ -1,8 +1,9 @@
 package com.aripov.dependecyinjection
 
 import android.util.Log
+import javax.inject.Inject
 
-class MyMOTHERBOARD(
+class MyMOTHERBOARD @Inject constructor(
     val cpu: MyCPU,
     val gpu: MyGPU,
     val ram: MyRAM,

@@ -1,8 +1,9 @@
 package com.aripov.dependecyinjection
 
 import android.util.Log
+import javax.inject.Inject
 
-class MyPSU(
+class MyPSU @Inject constructor(
     private val motherboard: MyMOTHERBOARD
 ) {
     private val ratedWattage = 1000

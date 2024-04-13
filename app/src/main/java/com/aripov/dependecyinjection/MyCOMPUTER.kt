@@ -1,8 +1,9 @@
 package com.aripov.dependecyinjection
 
 import android.util.Log
+import javax.inject.Inject
 
-class MyCOMPUTER(
+class MyCOMPUTER @Inject constructor(
     private val motherboard: MyMOTHERBOARD,
     private val psu: MyPSU
 ) {
