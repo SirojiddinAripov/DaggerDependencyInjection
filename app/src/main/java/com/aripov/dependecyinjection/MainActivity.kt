@@ -2,6 +2,7 @@ package com.aripov.dependecyinjection
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.ReportFragment.Companion.reportFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         val myComputer = DaggerComputerComponent
             .create()
             .getComputer()
-            .bootComputer()
+        myComputer.bootComputer()
 
         //Manual Constructor Injection
 //        val myMotherboard = MyMOTHERBOARD(
