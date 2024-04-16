@@ -3,9 +3,9 @@ package com.aripov.dependecyinjection
 import android.util.Log
 import javax.inject.Inject
 
-class MyNVME @Inject constructor() {
+class MyNVME {
     val wattage = 3
     fun setupNVME() {
-        Log.v("POSTING: ", "POWER NVME")
+        Log.v("POSTING: ", "Powering NVME")
     }
 }
