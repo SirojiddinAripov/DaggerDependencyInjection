@@ -6,8 +6,10 @@ import dagger.Component
     PSUModule::class,
     StorageModule::class,
     NVMEModule::class,
-    RX5700xtGPUModule::class
+    RTX4090GPUModule::class
 ])
 interface ComputerComponent {
-    fun getComputer() : MyCOMPUTER
+//    fun getComputer() : MyCOMPUTER
+    fun inject(mainActivity: MainActivity)
+    //if this component is to be used elsewhere you need to declare that for each.
 }

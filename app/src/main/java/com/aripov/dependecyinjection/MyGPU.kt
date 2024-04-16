@@ -5,4 +5,5 @@ import javax.inject.Inject
 
 interface MyGPU{
     fun setupGPU()
+    fun wattage() : Int
 }

@@ -4,17 +4,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.ReportFragment.Companion.reportFragment
+import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
+    @Inject
+    lateinit var myComputer : MyCOMPUTER
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Logging Delination
         Log.v("POSTING: ", "-------NEW CYCLE-------")
         //Dependency Injection Using Dagger
-        val myComputer = DaggerComputerComponent
+        DaggerComputerComponent
             .create()
-            .getComputer()
+            .inject(this)
         myComputer.bootComputer()
 
         //Manual Constructor Injection
