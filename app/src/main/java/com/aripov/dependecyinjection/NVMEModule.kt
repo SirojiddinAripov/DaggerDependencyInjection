@@ -1,5 +1,6 @@
 package com.aripov.dependecyinjection
 
+import android.util.Log
 import dagger.Module
 import dagger.Provides
 

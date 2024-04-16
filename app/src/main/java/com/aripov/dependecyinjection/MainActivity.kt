@@ -16,7 +16,9 @@ class MainActivity : AppCompatActivity() {
         Log.v("POSTING: ", "-------NEW CYCLE-------")
         //Dependency Injection Using Dagger
         DaggerComputerComponent
-            .create()
+            .builder()
+            .rAMModule(RAMModule(16))
+            .build()
             .inject(this)
         myComputer.bootComputer()
 

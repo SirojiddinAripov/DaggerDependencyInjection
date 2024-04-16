@@ -6,6 +6,7 @@ import dagger.Component
     PSUModule::class,
     StorageModule::class,
     NVMEModule::class,
+    RAMModule::class,
     RTX4090GPUModule::class
 ])
 interface ComputerComponent {
