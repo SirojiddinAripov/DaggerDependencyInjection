@@ -7,6 +7,6 @@ import dagger.Provides
 class PSUModule {
     @Provides
     fun providesPSU(): MyPSU {
-        return MyPSU(MyMOTHERBOARD(MyCPU(), MyGPU(), MyRAM(), MySTORAGE(MyNVME())))
+        return MyPSU(MyMOTHERBOARD(MyCPU(), RX_5700_xt(), MyRAM(), MySTORAGE(MyNVME())))
     }
 }

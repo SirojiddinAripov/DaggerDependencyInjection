@@ -5,7 +5,7 @@ import javax.inject.Inject
 
 class MyMOTHERBOARD @Inject constructor(
     val cpu: MyCPU,
-    val gpu: MyGPU,
+    val gpu: RX_5700_xt,
     val ram: MyRAM,
     val storage: MySTORAGE,
 ) {
